@@ -9,7 +9,8 @@ class index extends controller{
                     $this->index();
                 }
         }        
-        public function index(){
+        public function index(){            
+            $this->view->data=$this->model->call('admin','getgroomphotos');
             $this->view->render('index');
         }
 }

@@ -11,5 +11,15 @@ class controller{
                 }
                 return false;
         }
+        protected  function adminsession(){
+            if(session::check('admin')){
+                return true;
+            }
+            
+            $this->view->render('admin/login');
+            die();
+            //die('you shoulld login');
+            return false;
+        }
 }
 

@@ -14,7 +14,7 @@ class path{
 		define("ADMIN",PATH.'admin/');
 		define("ADMININCLUDE",INCLUDE_FILE.'admin/');
                 //define("USER",PATH.'user/');
-                define("PHOTO_PATH",PATH.'photos/');
+                define("PHOTO_PATH",PATH.'photo/');
     }
     
 }

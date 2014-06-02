@@ -1,7 +1,8 @@
 <?php
 class admin extends controller{
         public function __construct($url){
-                    parent::__construct();
+            parent::__construct();
+           $this->adminsession();
             if($this->checkmethodexists($this,$url)){                
                 $this->$url[1]();
             }

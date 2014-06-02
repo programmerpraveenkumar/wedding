@@ -82,7 +82,7 @@
 				</header>
 				<p class="subline">திருமணத்திற்கு வருகை தரும் அனைவரையும் இருகரம் ‌‍‍‍‍கூப்பி வரவேற்கிறோம்...   </p>
 				<div class="preloader">
-					<img src="img/hero-unit.jpg" alt="Placeholder" class="hero-unit fade-in" />
+					<img src="<?php echo PHOTO_PATH ?>title/main.jpg" alt="Placeholder" class="hero-unit fade-in" />
 				</div>
 				<div class="row divider date-section">
 					<div class="large-6 small-12 columns">
@@ -117,7 +117,7 @@
 					<div class="row">
 						<div class="small-12 large-6 columns section-bride">
 							<div class="preloader">
-								<img src="img/groom.jpg" alt="Bride" class="fade-in" />
+								<img src="<?php echo PHOTO_PATH ?>title/bride.jpg" alt="Bride" class="fade-in" />
 							</div>
 							<blockquote class="caption-1">
 								<p>
@@ -131,7 +131,7 @@
 						</div>
 						<div class="small-12 large-6 columns section-groom">
 							<div class="preloader">
-								<img src="img/bride.jpg" alt="Groom" class="fade-in" />
+								<img src="<?php echo PHOTO_PATH ?>title/groom.jpg" alt="Groom" class="fade-in" />
 							</div>
 							<blockquote class="caption-2">
 								<p>
@@ -158,24 +158,7 @@
 					<div class="small-11 small-centered large-8 large-centered columns">			
 						<div class="flexslider">
 							<ul class="slides">
-								<li>
-									<img src="img/groomsmen-1.jpg" alt="Placeholder" />
-									<p class="flex-caption">
-										Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-									</p>
-								</li>
-								<li>
-									<img src="img/groomsmen-2.jpg" alt="Placeholder" />
-									<p class="flex-caption">
-										Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-									</p>
-								</li>
-								<li>
-									<img src="img/groomsmen-3.jpg" alt="Placeholder" />
-									<p class="flex-caption">
-										Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-									</p>
-								</li>
+								<?php if(isset($this->data["groomphotos"])) echo $this->data["groomphotos"]; ?>
 							</ul>
 						</div><!-- END .flexslider -->
 					</div><!-- END .small-11 -->
@@ -191,24 +174,7 @@
 					<div class="small-11 small-centered large-8 large-centered columns">			
 						<div class="flexslider">
 							<ul class="slides">
-								<li>
-									<img src="img/bridesmaid-1.jpg" alt="Placeholder" />
-									<p class="flex-caption">
-										Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-									</p>
-								</li>
-								<li>
-									<img src="img/bridesmaid-2.jpg" alt="Placeholder" />
-									<p class="flex-caption">
-										Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-									</p>
-								</li>
-								<li>
-									<img src="img/bridesmaid-3.jpg" alt="Placeholder" />
-									<p class="flex-caption">
-										Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-									</p>
-								</li>
+								<?php if(isset($this->data["bridephotos"])) echo $this->data["bridephotos"]; ?>
 							</ul>
 						</div><!-- END .flexslider -->
 					</div><!-- END .small-11 -->
@@ -224,22 +190,22 @@
 					<ul class="small-block-grid-1 large-block-grid-2 block-grid">
 						<li>
 							<a href="#" class="block-logo">
-								<img src="img/logo-1.png" alt="Logo" />
+								<?php if(isset($this->data["groomdad"])) echo $this->data["groomdad"]; ?>
 							</a>
 						</li>
 						<li>
 							<a href="#" class="block-logo">
-								<img src="img/logo-2.png" alt="Logo" />
+								<?php if(isset($this->data["groommom"])) echo $this->data["groommom"]; ?>
 							</a>
 						</li>					  
 						<li>
 							<a href="#" class="block-logo">
-								<img src="img/logo-3.png" alt="Logo" />
+								<?php if(isset($this->data["bridemom"])) echo $this->data["bridemom"]; ?>
 							</a>
 						</li>					  
 						<li>
 							<a href="#" class="block-logo">
-								<img src="img/logo-4.png" alt="Logo" />
+								<?php if(isset($this->data["bridedad"])) echo $this->data["bridedad"]; ?>
 							</a>
 						</li>					
 					</ul>
@@ -256,26 +222,7 @@
 				</div>
 				<div class="small-12 large-6 large-centered columns wrapper">				
 					<ul class="small-block-grid-1 large-block-grid-2 block-grid">
-						<li>
-							<a href="#" class="block-logo">
-								<img src="img/logo-1.png" alt="Logo" />
-							</a>
-						</li>
-						<li>
-							<a href="#" class="block-logo">
-								<img src="img/logo-2.png" alt="Logo" />
-							</a>
-						</li>					  
-						<li>
-							<a href="#" class="block-logo">
-								<img src="img/logo-3.png" alt="Logo" />
-							</a>
-						</li>					  
-						<li>
-							<a href="#" class="block-logo">
-								<img src="img/logo-4.png" alt="Logo" />
-							</a>
-						</li>					
+						<?php if(isset($this->data["function"])) echo $this->data["function"]; ?>					
 					</ul>
 					<p class="content-block">
 						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
