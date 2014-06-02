@@ -2,7 +2,7 @@
 
 class view{
     public function render($file){
-        $file='view/'.$file.'.php';        
+        $file='view/'.$file.'View.php';        
         try{
             
             if(file_exists($file))
