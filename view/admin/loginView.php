@@ -82,13 +82,13 @@
 		
 		<!-- Begin of #main-content -->
 		<div id="main-content">
-			<div class="container_12">
+                    <div style="margin-left:215px;"class="container_12">
 			
                             
-                            <form class="form" name="" action="" method="post" onsubmit="return validation()"> 
-                                <div><label class="label">username</label><input class="textbox" type="text" name="username" /></div>
-                                <div><label class="label">Password</label><input  class="textbox" type="text" name="password" /></div>
-                                
+                            <form class="form"  name="" action="<?php echo PATH ?>validation/admin" method="post" onsubmit="return validation()"> 
+                               <div class="separator"><label class="label">username</label><input class="textbox" type="text" name="username" /></div>
+                               <div class="separator"><label class="label">Password</label><input  class="textbox" type="password" name="password" /></div>
+                                <div class="submitdiv separator "><input class="submit_btn" type="submit" value="Log In" /></div> 
                             </form>
 			
 			<div class="clear height-fix"></div>

@@ -63,23 +63,18 @@ class adminModel extends database{
             
             );
     }
-    public function parents(){            
-        $type=$_GET["type"];
-        switch($type){
-            case "groomdad":
-                $this->_tmp='groom/dad.jpg';
-            break;
-            case "groommom":
-                $this->_tmp='groom/mom.jpg';
-            break;
-            case "bridemom":
-                $this->_tmp='bride/mom.jpg';
-            break;
-            case "bridedad":
-                 $this->_tmp='bride/dad.jpg';
-            break;            
+    
+    public function validation(){
+        $username='admin';
+        $pass='pass';
+        $data=$this->DB_refreshdata($_POST);
+        if($data['username']==$username && $data['password']=='pass'){
+            session::set('admin','admin');
+            $this->DB_redirect(ADMIN);
+        }        
+        else{
+            $this->DB_redirect(ADMIN.'?msg=error');
         }
-        move_uploaded_file($_FILES['image']["tmp_name"],'photo/parents/'.$this->_tmp);
     }
 }    
 ?>

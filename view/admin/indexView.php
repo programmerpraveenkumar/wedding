@@ -37,6 +37,7 @@
   <link rel="stylesheet" href="<?php echo ADMININCLUDE ?>css/tables.css"> <!-- Tables, optional -->
   <link rel="stylesheet" href="<?php echo ADMININCLUDE ?>css/charts.css"> <!-- Charts, optional -->
   <link rel="stylesheet" href="<?php echo ADMININCLUDE ?>css/jquery-ui-1.8.15.custom.css"> <!-- jQuery UI, optional -->
+  <link rel="stylesheet" href="<?php echo INCLUDE_FILE;  ?>css/neha.css" />
   <!-- end CSS-->
   
   <!-- Fonts -->
@@ -49,6 +50,7 @@
        Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
        For optimal performance, use a custom Modernizr build: www.NEHA.com/download/ -->
   <script src="js/libs/modernizr-2.0.6.min.js"></script>
+  <script src="<?php echo INCLUDE_FILE;  ?>js/validation.js"></script>
 </head>
 
 <body id="top">
@@ -100,9 +102,11 @@
 	    		<li>
 	    			<a href="javascript:void(0);"><img src="<?php echo ADMININCLUDE ?>img/icons/packs/fugue/16x16/clipboard-list.png">Groom and bride<span class="badge grey">3</span></a>
 	    			<ul class="sub">
-	    				<li><a href="list_block.html">Title photos</a></li>
-	    				<li><a href="list_shortcut.html">Parents(groom and bride)</a></li>
-	    				<li><a href="list_contact.html">Photos</a></li>
+	    				<li><a href="<?php echo ADMIN ?>index">Title photos</a></li>
+	    				<li><a href="<?php echo ADMIN ?>parents">Parents(groom and bride)</a></li>
+                                        <li><a href="<?php echo ADMIN ?>slider">bride photos(slider)</a></li>
+                                        <li><a href="<?php echo ADMIN ?>slider">Groom photos(slider)</a></li>
+	    				<li><a href="<?php echo ADMIN ?>photos">Photos</a></li>
 	    			</ul>
 	    		</li>
 	    		<li><a href="<?php echo ADMIN ?>video"><img src="<?php echo ADMININCLUDE ?>img/icons/packs/fugue/16x16/ui-tab-content.png">Video</a></li>
@@ -127,7 +131,7 @@
 		<div id="main-content">
 			<div class="container_12">
 			
-                            
+                            <?php if(isset($this->data['data'])) echo $this->data['data']; ?>
 
 			
 			<div class="clear height-fix"></div>

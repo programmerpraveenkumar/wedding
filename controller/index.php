@@ -13,5 +13,6 @@ class index extends controller{
             $this->view->data=$this->model->call('admin','getgroomphotos');
             $this->view->render('index');
         }
+      
 }
 ?>

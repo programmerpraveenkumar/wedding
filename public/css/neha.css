@@ -1,10 +1,29 @@
 .form{
-    
+    border:1px solid black;
+    float: left;
+    max-width:75%;
+    min-width: 50;
+    margin-bottom:5px;
 }
 .form .textbox{
     width: 250px;
+}
+.form .title{
+    color:red;
+    font-size: 20px;
 }
 .form .label{
     display: inline-block;
     width: 150px;
 }
+.form .separator{
+    margin:5px;
+    float: left;
+    clear: left;
+    
+}
+.form .submit_btn{
+    width: 150px;padding:10px;
+}
+.form .submitdiv{margin-left: 50px;}
+.form .form_error{color:red;}
