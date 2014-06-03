@@ -2,8 +2,9 @@
     border:1px solid black;
     float: left;
     max-width:75%;
-    min-width: 50;
+    min-width: 50%;
     margin-bottom:5px;
+    clear: both;
 }
 .form .textbox{
     width: 250px;

@@ -110,7 +110,7 @@
 	    			</ul>
 	    		</li>
 	    		<li><a href="<?php echo ADMIN ?>video"><img src="<?php echo ADMININCLUDE ?>img/icons/packs/fugue/16x16/ui-tab-content.png">Video</a></li>
-	    		<li><a href="notifications.html"><img src="<?php echo ADMININCLUDE ?>img/icons/packs/fugue/16x16/application--exclamation.png">Functions</a></li>
+	    		<li><a href="<?php echo ADMIN ?>functionform"><img src="<?php echo ADMININCLUDE ?>img/icons/packs/fugue/16x16/application--exclamation.png">Functions</a></li>
 	    		
 	    		
 	    	</ul>

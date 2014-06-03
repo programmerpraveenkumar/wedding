@@ -8,25 +8,7 @@ class adminModel extends database{
             "groommom"=>'<img src="'.PHOTO_PATH.'parents/groom/mom.jpg" alt="Logo" />',
             "bridemom"=>'<img src="'.PHOTO_PATH.'parents/bride/mom.jpg" alt="Logo" />',
             "bridedad"=>'<img src="'.PHOTO_PATH.'parents/bride/dad.jpg" alt="Logo" />',
-            "function"=>'<li><a href="#" class="block-logo">
-								<img src="'.PHOTO_PATH.'function/1.jpg" alt="Logo" />
-							</a>
-						</li>
-						<li>
-							<a href="#" class="block-logo">
-								<img src="'.PHOTO_PATH.'function/2.jpg" alt="Logo" />
-							</a>
-						</li>					  
-						<li>
-							<a href="#" class="block-logo">
-								<img src="'.PHOTO_PATH.'function/3.jpg" alt="Logo" />
-							</a>
-						</li>					  
-						<li>
-							<a href="#" class="block-logo">
-								<img src="'.PHOTO_PATH.'function/4.jpg" alt="Logo" />
-							</a>
-						</li>',
+                "function"=>$this->functionphotos(),
             "photo"=>$this->getphoto()
             
             
@@ -43,6 +25,19 @@ class adminModel extends database{
         }
         return $this->_tmp;
      
+    }
+    private function functionphotos(){
+        $this->_tmp='';  
+        $data= array_values(array_diff(scandir('photo/function'),array('.','..')));
+         for($i=0;$i<count($data);$i++){
+             
+        $this->_tmp.='<li><a href="#" class="block-logo">
+								<img src="'.PHOTO_PATH.'function/'.$data[$i].'" alt="Logo" />
+							</a>
+						</li>';
+         }
+         return $this->_tmp;
+        
     }
     private function groomandbrideslider($type){
 $this->_tmp='';

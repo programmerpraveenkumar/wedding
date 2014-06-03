@@ -47,5 +47,12 @@ class admin extends controller{
         public function photostore(){        
             $this->model->call('photo','photostore');            
         }
+        public function functionphotostore(){
+             $this->model->call('photo','functionphotostore');            
+        }
+        public function functionform(){
+             $this->view->data=$this->model->call('photo','functionphotoform');
+            $this->view->render('admin/index');
+        }
 }
 
