@@ -12,6 +12,7 @@ class admin extends controller{
             }
         }
         public function index(){
+            
             $this->view->data=$this->model->call('photo','title');
             $this->view->render('admin/index');
         }
@@ -39,6 +40,12 @@ class admin extends controller{
         public function parentstore(){
             $this->model->call('photo','parentstore');            
         }
-        
+        public function photos(){
+            $this->view->data=$this->model->call('photo','photoForm');
+            $this->view->render('admin/index');            
+        }
+        public function photostore(){        
+            $this->model->call('photo','photostore');            
+        }
 }
 

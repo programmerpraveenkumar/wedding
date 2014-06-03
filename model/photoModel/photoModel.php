@@ -116,6 +116,20 @@ class photoModel extends database{
         move_uploaded_file($_FILES['image']["tmp_name"],'photo/parents/'.$this->_tmp);
         $this->DB_redirect(ADMIN.'parents?msg=upload_ok');
     }
+    public function photoForm(){
+        
+ return array("data"=>'<form class="form" method="post" enctype="multipart/form-data" action="'.ADMIN.'photostore"  name="photo" onsubmit="return validation(\'photo\',{\'first\':[\'image\',\'file\']})">                                
+                               <div class="title">Photo</div>
+                                 <div class="separator"><label class="label">Choose IMage</label><input class="textbox" name="image" type="file" /><span class="form_image" id="error_image"></span>
+                                <span class="error">IMage size should be(500*500)</span>
+                                    <div class="separator submit_btn"><input class="submit_btn" type="submit" name="submit" /></div>
+                                </div>
+                            </form>');
+    }
+    public function photostore(){
+        move_uploaded_file($_FILES['image']["tmp_name"],'photo/photo/'.uniqid().'.jpg');
+        $this->DB_redirect(ADMIN.'photos?msg=upload_ok');
+    }
     
     
 }
