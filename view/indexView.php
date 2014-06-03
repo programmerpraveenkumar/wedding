@@ -1,5 +1,4 @@
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 
@@ -237,56 +236,56 @@
 				<div class="small-12 columns">
 					<ul class="clearing-thumbs" data-clearing>
 						<li>
-							<a href="img/photo-1.jpg">
-								<img src="img/photo-1.jpg" alt="Engagement" class="fade-in">
+							<a href="<?php echo PHOTO_PATH ?>img/photo-1.jpg">
+								<img src="<?php echo PHOTO_PATH ?>photo/photo-1.jpg" alt="Engagement" class="fade-in">
 								<span class="overlay-label">Engagement</span>
 							</a>
 						</li>
 						<li>
 							<a href="img/photo-2.jpg">
-								<img src="img/photo-2.jpg" alt="The Dress" class="fade-in">
+								<img src="<?php echo PHOTO_PATH ?>photo/photo-2.jpg" alt="The Dress" class="fade-in">
 								<span class="overlay-label">The Dress</span>
 							</a>
 						</li>
 						<li>
 							<a href="img/photo-3.jpg">
-								<img src="img/photo-3.jpg" alt="The Ceremony" class="fade-in">
+								<img src="<?php echo PHOTO_PATH ?>photo/photo-3.jpg" alt="The Ceremony" class="fade-in">
 								<span class="overlay-label">The Ceremony</span>
 							</a>
 						</li>
 						<li>
 							<a href="img/photo-4-panoramic.jpg">
-								<img src="img/photo-4.jpg" alt="Our Reception" class="fade-in">
+								<img src="<?php echo PHOTO_PATH ?>photo/photo-4.jpg" alt="Our Reception" class="fade-in">
 								<span class="overlay-label">Our Reception</span>
 							</a>
 						</li>
 						<li>
 							<a href="img/photo-5.jpg">
-								<img src="img/photo-5.jpg" alt="Cutting the Cake" class="fade-in">
+								<img src="<?php echo PHOTO_PATH ?>photo/photo-5.jpg" alt="Cutting the Cake" class="fade-in">
 								<span class="overlay-label">Cutting the Cake</span>
 							</a>
 						</li>
 						<li>
 							<a href="img/photo-6.jpg">
-								<img src="img/photo-6.jpg" alt="Bouquet" class="fade-in">
+								<img src="<?php echo PHOTO_PATH ?>photo/photo-6.jpg" alt="Bouquet" class="fade-in">
 								<span class="overlay-label">Bouquet</span>
 							</a>
 						</li>
 						<li>
 							<a href="img/photo-7.jpg">
-								<img src="img/photo-7.jpg" alt="Beach Kiss" class="fade-in">
+								<img src="<?php echo PHOTO_PATH ?>photo/photo-7.jpg" alt="Beach Kiss" class="fade-in">
 								<span class="overlay-label">Beach Kiss</span>
 							</a>
 						</li>
 						<li>
 							<a href="img/photo-8.jpg">
-								<img src="img/photo-8.jpg" alt="Memories" class="fade-in">
+								<img src="<?php echo PHOTO_PATH ?>photo/photo-8.jpg" alt="Memories" class="fade-in">
 								<span class="overlay-label">Memories</span>
 							</a>
 						</li>
                         <li>
 							<a href="img/photo-8.jpg">
-								<img src="img/photo-8.jpg" alt="Memories" class="fade-in">
+								<img src="<?php echo PHOTO_PATH ?>photo/photo-8.jpg" alt="Memories" class="fade-in">
 								<span class="overlay-label">Memories</span>
 							</a>
 						</li>

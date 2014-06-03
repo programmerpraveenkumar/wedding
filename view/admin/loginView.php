@@ -37,7 +37,7 @@
   <link rel="stylesheet" href="<?php echo ADMININCLUDE ?>css/tables.css"> <!-- Tables, optional -->
   <link rel="stylesheet" href="<?php echo ADMININCLUDE ?>css/charts.css"> <!-- Charts, optional -->
   <link rel="stylesheet" href="<?php echo ADMININCLUDE ?>css/jquery-ui-1.8.15.custom.css"> <!-- jQuery UI, optional -->
-  <link rel="stylesheet" href="<?php echo ADMININCLUDE ?>css/neha.css"> <!-- jQuery UI, optional -->
+  <link rel="stylesheet" href="<?php echo INCLUDE_FILE ?>css/neha.css"> <!-- jQuery UI, optional -->
   <!-- end CSS-->
   
 </head>
